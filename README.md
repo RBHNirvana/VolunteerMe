@@ -7,7 +7,7 @@ We wanted to assist all high school students who would want to look for any volu
 It allows organizations to to list any volunteer opportunities while allowing volunteers to look through and pick up any volunteer opportunities available in any select area they choose.
 
 # How we built it
-We utilized visual studio code to use the languages listed below:
+We utilized visual studio code to use the languages listed as follows:
 CSS
 Flask
 HTML
