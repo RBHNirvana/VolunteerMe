@@ -1,0 +1,83 @@
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0px;
+  background-image: url(Landing-background-white.png);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #707070;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button {
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .button1 {
+    background-image: url(LandingPage-Green-Background.svg); 
+    width: 356px;
+    height: 478px;
+  }
+  
+  .button2 {
+    background-image: url(LandingPage-Purple-Background.svg); 
+    width: 356px;
+    height: 477px;
+  }
+  
+  .header {
+    background-color: white;
+    padding-bottom: 3px;
+    margin-bottom: 69px;
+    padding-top: 1px;
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+
+  .header h1{
+    width: 25%;
+    font-weight: 400;
+    padding-left: 25px;
+  }
+
+  .title > a{
+    text-decoration: none;
+    color: #707070;
+  }
+
+  .title{
+    width: 10%;
+    display: inline-block;
+  }
+  
+
+  .button-container {
+    text-align: center;
+  }
+
+  b{
+    font-weight: 400;
+    font-size: xxx-large;
+  }
+
+  

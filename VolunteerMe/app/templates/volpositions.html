@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="../static/index.css">
+<link rel="stylesheet" href="../static/position.css">
+<title>VolunteerMe</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="header">
+        <div class="title">
+            <a href="{{url_for('index')}}"> 
+            <h1>VolunteerMe</h1>
+            </a>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="tags-bar">
+        </div>
+        <div class="posts-container">
+
+            <!--Filler code until we get some entries in the data base-->
+            <div class="postings-container">
+                {% for org in orgs %}
+                {% for position in org.positions %}
+                <div class="postings">
+
+                    <div class="heading-post">
+                        <h4 class="pos-title">Position: {{position.pos_name}}</h4>
+                        <h4 class="org-name">Org Name: {{position.pos_org}}</h4>
+                        <h4 class="pos-location">Location: {{position.pos_location}}</h4>
+                    </div>
+                    <p style="margin-left:20px; text-align: initial">Description:</p>
+                    <p class="pos-description">{{position.pos_summary}}</p>
+
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
+
+  
+
+            <div class="info-container">
+                <h1 class="org-highlighted-name">Organization</h1>
+                <img src="../static/warehouse.png" height="75" width="75" alt="">
+                <h4 class="org-location">Location</h4>
+                <h4 class="org-email">Email</h4>
+                <h3 class="pos-highlighted-title">Position Title</h3>
+                <h3 class="pos-highlighted-location">Location</h3>
+                <div class="divider"></div>
+                <p class="pos-highlighted-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.
+                </p>
+                <button class="apply-btn">Apply</button>
+            </div>
+        </div>
+    </div> 
+</body>
+{% endblock %}

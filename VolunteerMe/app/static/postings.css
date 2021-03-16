@@ -1,0 +1,87 @@
+body{
+    background-image: url('OrgPositions-Background-SVG.svg');
+}
+
+.tags-btn{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #c7c7c7;
+}
+
+.tags-btn:hover{
+    cursor: pointer;
+}
+
+.tag-container{
+    width: 33%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.tag-container a{
+    text-decoration: none;
+}
+
+.tag-container h2{
+    color: white;
+}
+
+.info-heading{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px 20px 0px 0px;
+    display: inline-block;
+    background-color: rgba(204, 131, 225, 0.46);
+}
+
+.info-heading h1{
+    width: 50%;
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.info-heading h1:hover{
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #CC83E1;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.titles{
+    display: inline-block;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.titles h4{
+    width: 30%;
+    float: left;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.high-descript{
+    margin: 0px 20px 0px 20px;
+    text-align: initial;
+}
+
+.info-content button{
+    margin-top: auto;
+    width: 25%;
+    color: white;
+    background-color: #0A63FB;
+    border: none;
+    border-radius: 15px;
+    height: 25px;
+    font-size: 20px;
+}
+
+.org-button-container{
+    margin-top: 50px;
+}

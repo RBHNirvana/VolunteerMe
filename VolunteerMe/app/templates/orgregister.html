@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/index.css">
+<link rel="stylesheet" href="../static/login.css">
+<title>Organization Login</title>
+{% endblock %}
+
+{% block content %}
+<body>
+  <div class="header">
+    <div class="title">
+      <a href="{{url_for('index')}}">
+      <h1>VolunteerMe</h1>
+    </a>
+    </div> 
+  </div>
+
+      <div class ="button-container">
+      <div class="card1" >
+        <p>
+          <b>Login</b>
+        </p><br>
+            <form action="" method="post">
+                {{loginform.hidden_tag()}}
+
+                {{loginform.org_email.label(class='label')}} </br>
+                {{loginform.org_email(class='input')}} </br>
+
+                {{loginform.password.label(class='label')}} </br>
+                {{loginform.password(class='input')}} </br>
+                <div class="useless-hoe">
+                  
+                </div>
+                </br>
+                </br>
+
+                {{loginform.submit(class='submit')}}
+
+            </form>
+      </div>
+    <div class="card2" >
+      <p>
+          <b>Register</b>
+      </p><br>
+          <form action="" method="post">
+              {{regform.hidden_tag()}}
+
+              {{regform.org_name.label(class='label')}} </br>
+              {{regform.org_name(class='input')}} </br>
+
+              {{regform.org_email.label(class='label')}} </br>
+              {{regform.org_email(class='input')}} </br>
+
+              {{regform.password.label(class='label')}} </br>
+              {{regform.password(class='input')}} </br>
+
+              </br>
+              {{regform.submit(class='submit')}}
+
+          </form>
+  </div>
+
+
+
+
+  <!--<div class ="button-container">
+      <div class="card1" >
+        <p>
+          <b>Login</b>
+        </p><br>
+        <form action="" method = "post">
+          <label for="orgname">Organization Name</label><br>
+          <input type="text" name="orgname"></input><br>
+          <label for="orgname">Password</label><br>
+          <input type="text" name="password"></input><br>
+          <label for="orgname"></label><br>
+          <input class="useless-hoe" type="text" name="password"></input><br>
+          <input type="submit" name="login" value="Login"></input><br>
+        </form>
+      </div>
+    <div class="card2" >
+      <p>
+          <b>Register</b>
+      </p><br>
+      <form action="" method ="post">
+        <label for="orgname">Organization Name</label><br>
+        <input type="text" name="orgname"></input><br>
+        <label for="orgname">Email</label><br>
+        <input type="text" name="email"></input><br>
+        <label for="orgname">Password</label><br>
+        <input type="text" name="password"></input><br>
+        <input type="submit" name="register" value="Register"></input>
+      </form>
+  </div>
+  </body>-->
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/index.css">
+<title>VolunteerMe Landing</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="header">
+      <h1>VolunteerMe</h1>
+    </div>
+    <div class ="button-container">
+        <a href="{{url_for('volpositions')}}">
+            <div class="button button1" >
+                <p>
+                  I am a <br/><b>volunteer</b>
+                </p>
+            </div>
+        </a>
+        <a href="{{url_for('orgregister')}}">
+            <div class="button button2">
+                <p>
+                    I am an <br /><b>organization</b>
+                </p>
+            </div>
+        </a> 
+    </div>    
+</body>
+{% endblock %}

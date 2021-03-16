@@ -1,0 +1,80 @@
+body{
+margin: 0px;
+background-image: url(LogReg-Background-White.png);
+}
+
+.card1 {
+    background-image: url(LogReg-Login-SVG.svg); 
+    width: 350px;
+    height: 478px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .card2 {
+    background-image: url(LogReg-Register-SVG.svg); 
+    width: 353px;
+    height: 474px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .input {
+    background-color: #D3D3D3;
+    width: 50%;
+    height: 1%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 450px;
+    box-sizing: border-box;
+  }
+  
+ .submit {
+    width: 30%;
+    height: 35px;
+    cursor: pointer;
+    background-color: #CC83E1;
+    color: white;
+    outline: none;
+    border: 1px solid #CC83E1;
+    border-radius: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 25px;
+  }
+
+.useless-hoe{
+  background-color: white !important;
+  border: none !important;
+  cursor: default !important;
+  caret-color: transparent !important;
+  color: white !important;
+  height: 55px;
+  width: 1px;
+}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/position.css">
+<link rel="stylesheet" href="../static/index.css">
+<link rel="stylesheet" href="../static/profiles.css">
+<title>VolunteerMe</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="header">
+        <div class="title">
+            <a href="{{url_for('index')}}"> 
+            <h1>VolunteerMe</h1>
+            </a>
+        </div>
+        <div class="rightside">
+            <a href="{{url_for('logout')}}">
+            <h1>Logout</h1>
+            </a>
+        </div>
+        <div class="rightside">
+            <a href="{{url_for('orgpostings')}}">
+            <h1>Postings</h1>
+            </a>
+        </div>
+        <div class="rightside1">
+            <a href="{{url_for('profiles')}}">
+            <h1>Profile</h1>
+            </a>
+        </div>
+    </div>
+    <div class="org-container">
+        <img src="../static/warehouse.png" height="150px" width="150px" alt="">
+        <h1>Organization Name</h1>
+        <h4>Location</h4>
+        <h4>Email</h4>
+
+        <div class="divide"></div>
+        
+        <h3>Mission</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+            nonumy eirmod tempor invidunt ut labore et dolore magna 
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+            sea takimata sanctus est Lorem ipsum dolor sit amet
+        </p>
+    </div>
+    <div class="profiles-container">
+        {% for i in range(0, 8) %}
+        <div class="profiles">
+
+            <div class="heading-post">
+                <h4 class="pos-title">Position Title</h4>
+                <h4 class="org-name">Org Name</h4>
+                <h4 class="pos-location"># Applicants</h4>
+            </div>
+            <p class="pos-description">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a.
+            </p>
+
+        </div>
+        {% endfor %}
+    </div>
+</body>
+{% endblock %}
